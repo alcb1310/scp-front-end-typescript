@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+// import Login from './authentication/Login'
+import { AccessTokenContextProvider } from './context/AccessTokenContext'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+import ProtectedRoutes from './routes/ProtectedRoutes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	return (
+		<div className='App'>
+			<AccessTokenContextProvider>
+				<Router>
+					<ul>
+						<li>
+							<Link to='/app'>App</Link>
+						</li>
+						<li>
+							<Link to='/app/parameters/suppliers'>
+								Suppliers
+							</Link>
+						</li>
+					</ul>
+					{/* <Routes>
+						<Route path='/' element={<Login />} />
+					</Routes> */}
+					<ProtectedRoutes />
+				</Router>
+			</AccessTokenContextProvider>
+		</div>
+	)
 }
 
-export default App;
+export default App

@@ -1,0 +1,17 @@
+$primary: #47B5FF;
+$background: #DFF6FF;
+$dark: #06283D;
+$success: #256D85;
+$btn-link-hover-color: #DFF6FF;
+$danger: #dc3545;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-light: 300;
+
+:root{
+    --bs-btn-hover-color: $btn-link-hover-color !important;
+}
+
+// $line-height-base:  .75;
+// $input-btn-line-height: 1.25;

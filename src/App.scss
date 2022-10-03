@@ -1,0 +1,11 @@
+@import "./css/defaults.scss";
+
+@import "bootstrap";
+
+.btn-outline-primary:hover, .btn-outline-primary:focus{
+    color: $btn-link-hover-color !important;
+}
+
+.btn-outline-primary{
+    color: $primary !important;
+}
