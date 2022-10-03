@@ -6,6 +6,8 @@ import Supplier from '../pages/parameters/Supplier'
 import BudgetItems from '../pages/parameters/BudgetItems'
 import Project from '../pages/transactions/Project'
 import ProjectBudget from '../pages/transactions/ProjectBudget'
+import Invoice from '../pages/transactions/Invoice'
+import Create from '../pages/users/Create'
 
 const ProtectedRoutes = () => {
 	// const shouldRedirect = !accessTokenContext?.token?.loggedIn
@@ -30,6 +32,14 @@ const ProtectedRoutes = () => {
                 <Route 
                     path='/app/transactions/project-budget'
                     element={<ProjectBudget />}
+                />
+                <Route 
+                    path='/app/transactions/invoice'
+                    element={<Invoice />}
+                />
+                <Route 
+                    path='/app/users/create'
+                    element={<Create />}
                 />
 			</Route>
 		</Routes>

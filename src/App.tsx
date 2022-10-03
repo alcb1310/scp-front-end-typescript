@@ -29,6 +29,12 @@ const App = () => {
 						<li>
 							<Link to='/app/transactions/project-budget'>Project Budget</Link>
 						</li>
+						<li>
+							<Link to='/app/transactions/invoice'>Invoices</Link>
+						</li>
+						<li>
+							<Link to='/app/users/create'>Create User</Link>
+						</li>
 					</ul>
 					{/* <Routes>
 						<Route path='/' element={<Login />} />
