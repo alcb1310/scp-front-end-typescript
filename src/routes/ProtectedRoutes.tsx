@@ -10,11 +10,13 @@ import Invoice from '../pages/transactions/Invoice'
 import Create from '../pages/users/Create'
 import ChangePassword from '../pages/users/ChangePassword'
 import ResetPassword from '../pages/users/ResetPassword'
+import RegisterCompany from '../pages/RegisterCompany'
 
 const ProtectedRoutes = () => {
 	return (
 		<Routes>
 			<Route path='/*' element={<Login />} />
+			<Route path='/company' element={<RegisterCompany />} />
 			<Route element={<RequireAuth />}>
 				<Route path='/app' element={<Root />} />
 				<Route
@@ -36,10 +38,10 @@ const ProtectedRoutes = () => {
 					path='/app/users/change-password'
 					element={<ChangePassword />}
 				/>
-                <Route 
-                    path='/app/users/reset-password'
-                    element={<ResetPassword />}
-                />
+				<Route
+					path='/app/users/reset-password'
+					element={<ResetPassword />}
+				/>
 			</Route>
 		</Routes>
 	)

@@ -4,6 +4,12 @@ export const NavigationBar = () => {
 	return (
 		<ul>
 			<li>
+				<Link to='/'>Home</Link>
+			</li>
+			<li>
+				<Link to='/company'>Create Company</Link>
+			</li>
+			<li>
 				<Link to='/app'>App</Link>
 			</li>
 			<li>
