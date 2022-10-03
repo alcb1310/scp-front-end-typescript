@@ -4,6 +4,7 @@ import { Root } from '../components/Root'
 import RequireAuth from '../authentication/RequireAuth'
 import Supplier from '../pages/parameters/Supplier'
 import BudgetItems from '../pages/parameters/BudgetItems'
+import Project from '../pages/transactions/Project'
 
 const ProtectedRoutes = () => {
 	// const shouldRedirect = !accessTokenContext?.token?.loggedIn
@@ -21,6 +22,10 @@ const ProtectedRoutes = () => {
 					path='/app/parameters/budget-items'
 					element={<BudgetItems />}
 				/>
+                <Route
+                    path='/app/transactions/project'
+                    element={<Project />}
+                />
 			</Route>
 		</Routes>
 	)
