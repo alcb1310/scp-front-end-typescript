@@ -9,6 +9,7 @@ import ProjectBudget from '../pages/transactions/ProjectBudget'
 import Invoice from '../pages/transactions/Invoice'
 import Create from '../pages/users/Create'
 import ChangePassword from '../pages/users/ChangePassword'
+import ResetPassword from '../pages/users/ResetPassword'
 
 const ProtectedRoutes = () => {
 	return (
@@ -35,6 +36,10 @@ const ProtectedRoutes = () => {
 					path='/app/users/change-password'
 					element={<ChangePassword />}
 				/>
+                <Route 
+                    path='/app/users/reset-password'
+                    element={<ResetPassword />}
+                />
 			</Route>
 		</Routes>
 	)
