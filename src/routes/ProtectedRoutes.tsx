@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import Login from '../authentication/Login'
-import { Root } from '../components/Root'
+import Root  from '../components/Root'
 import RequireAuth from '../authentication/RequireAuth'
 import Supplier from '../pages/parameters/Supplier'
 import BudgetItems from '../pages/parameters/BudgetItems'
@@ -13,6 +13,7 @@ import ResetPassword from '../pages/users/ResetPassword'
 import RegisterCompany from '../pages/RegisterCompany'
 
 const ProtectedRoutes = () => {
+
 	return (
 		<Routes>
 			<Route path='/*' element={<Login />} />

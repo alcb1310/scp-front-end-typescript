@@ -11,4 +11,4 @@ const Root = () => {
 	)
 }
 
-export { Root }
+export default Root 
