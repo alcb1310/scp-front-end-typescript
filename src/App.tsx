@@ -35,10 +35,10 @@ const App = () => {
 						<li>
 							<Link to='/app/users/create'>Create User</Link>
 						</li>
+						<li>
+							<Link to='/app/users/change-password'>Change Password</Link>
+						</li>
 					</ul>
-					{/* <Routes>
-						<Route path='/' element={<Login />} />
-					</Routes> */}
 					<ProtectedRoutes />
 				</Router>
 			</AccessTokenContextProvider>

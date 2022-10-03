@@ -8,10 +8,9 @@ import Project from '../pages/transactions/Project'
 import ProjectBudget from '../pages/transactions/ProjectBudget'
 import Invoice from '../pages/transactions/Invoice'
 import Create from '../pages/users/Create'
+import ChangePassword from '../pages/users/ChangePassword'
 
 const ProtectedRoutes = () => {
-	// const shouldRedirect = !accessTokenContext?.token?.loggedIn
-
 	return (
 		<Routes>
 			<Route path='/*' element={<Login />} />
@@ -25,22 +24,17 @@ const ProtectedRoutes = () => {
 					path='/app/parameters/budget-items'
 					element={<BudgetItems />}
 				/>
-                <Route
-                    path='/app/transactions/project'
-                    element={<Project />}
-                />
-                <Route 
-                    path='/app/transactions/project-budget'
-                    element={<ProjectBudget />}
-                />
-                <Route 
-                    path='/app/transactions/invoice'
-                    element={<Invoice />}
-                />
-                <Route 
-                    path='/app/users/create'
-                    element={<Create />}
-                />
+				<Route path='/app/transactions/project' element={<Project />} />
+				<Route
+					path='/app/transactions/project-budget'
+					element={<ProjectBudget />}
+				/>
+				<Route path='/app/transactions/invoice' element={<Invoice />} />
+				<Route path='/app/users/create' element={<Create />} />
+				<Route
+					path='/app/users/change-password'
+					element={<ChangePassword />}
+				/>
 			</Route>
 		</Routes>
 	)
