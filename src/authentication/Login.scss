@@ -1,0 +1,31 @@
+@import "../css/defaults.scss";
+@import "bootstrap";
+
+.title{
+    color: $dark;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.label{
+    font-size: 0.9rem;
+    line-height: .75;
+    color: $dark;
+}
+
+.successful, .error{
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.successful{
+    color: $success;
+}
+
+.error{
+    color: $danger;
+}
