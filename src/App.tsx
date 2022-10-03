@@ -17,6 +17,9 @@ const App = () => {
 							<Link to='/app/parameters/suppliers'>
 								Suppliers
 							</Link>
+							<Link to='/app/parameters/budget-items'>
+								Budget Items
+							</Link>
 						</li>
 					</ul>
 					{/* <Routes>
