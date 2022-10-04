@@ -1,0 +1,20 @@
+@import '../defaults.scss';
+
+.footer{
+    background-color: $dark;
+    color: $color-footer;
+    padding: 1rem 0;
+    font-size: small;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.icon{
+    margin-left: 1rem;
+}
+
+.footer a {
+    // color: $color-footer;
+    color: $background;
+    text-decoration: none;
+}
