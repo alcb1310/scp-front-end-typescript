@@ -1,0 +1,12 @@
+@import "./defaults.scss";
+
+td{
+    color: $primary !important;
+}
+
+thead{
+    background-color: $dark;
+    color: $background;
+    text-align: center;
+}
+
